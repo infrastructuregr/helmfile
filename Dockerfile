@@ -1,7 +1,7 @@
 FROM infrastructuregr/terraform-kubectl
 
 ENV HELM_VERSION v3.1.0
-ENV HELMFILE_VERSION v0.99.0
+ENV HELMFILE_VERSION v0.99.1
 
 RUN apk add --update --no-cache git py-pip bash jq\
     && curl https://get.helm.sh/helm-$HELM_VERSION-linux-amd64.tar.gz | tar xvzf - --strip-components=1 -C /usr/bin
